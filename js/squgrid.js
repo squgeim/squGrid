@@ -206,10 +206,9 @@
 
         var addGridToContext = function(
             ctx, numberOfColumns = 4, callback = null) {
-            var gridWidth =
-                Math.floor(parseInt(ctx.canvas.width) / numberOfColumns);
-            var height = parseInt(ctx.canvas.height);
-            var width = parseInt(ctx.canvas.width);
+            var gridWidth = parseFloat(ctx.canvas.width) / numberOfColumns;
+            var height = parseFloat(ctx.canvas.height);
+            var width = parseFloat(ctx.canvas.width);
 
             ctx.beginPath();
 
